@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+    --primary-color: #14213d;
+}
+
+.header{
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.header .logo{
+    color: #14213d;
+    font-size: 1.8rem;
+
+    display: flex;
+    flex-grow: initial;
+}
+
+.search-bar{
+    position: relative;
+    flex-grow: initial;
+}
+
+.search-bar input{
+    width: 400px;
+    padding: 12px 0 12px 5px;
+    border: .5px solid black;
+    border-radius: 10px;
+    outline: none;
+}
+
+.search-bar div i{
+    position: absolute;
+    margin-left: 365px;
+    margin-top: 15px;
+}
+
+.user-cart{
+    display: flex;
+    gap: 30px;
+
+    flex-grow: initial;
+    justify-content: flex-end;
+}
+
+.user-cart .user, .cart{
+    font-size: 1.6rem;
+    
+}
