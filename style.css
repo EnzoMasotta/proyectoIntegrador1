@@ -14,6 +14,7 @@
     --primary-color: #003366;
     --gray: #555555;
     --gray-background: #ECECEC;
+    --cards: #333333;
 }
 
 .first_nav{
@@ -68,7 +69,7 @@
     display: flex;
     position: relative;
     
-   
+    flex-grow: 1;
 }
 
 .search-bar input{
@@ -78,8 +79,7 @@
     border-radius: 10px;
     outline: none;
 
-    display: flex;
-    flex-grow: 1;
+   
 }
 
 .search-bar div i{
@@ -107,4 +107,158 @@
     background-image: url(https://grupomarquez.com.ar/Pubs/Sites/Default/Banners/1716.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.benefits{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 3rem;
+}
+
+.benefits .benefits_tittle{
+    font-size: 2rem;
+
+    text-transform: uppercase;
+
+    color: var(--primary-color);
+}
+
+.benefits_cards_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 3rem;
+    
+
+    flex-wrap: wrap;
+}
+
+.benefits_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    gap: 30px;
+    
+    width: 25rem;
+    height: 20rem;
+    padding: 20px;
+    margin: 0 30px;
+    
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    
+}
+
+.benefits_card h2{
+    color: var(--cards);
+}
+
+.benefits_card p{
+    color: var(--gray);
+}
+
+.products_prices{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 3rem;
+}
+
+.products_tittle{
+    display: flex;
+    padding: 0 8.5%;
+    
+    font-size: 1.6rem;
+
+    color: var(--primary-color);
+}
+
+.price_cards_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 1.5rem;
+    
+
+    flex-wrap: wrap;
+}
+
+.price_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+
+    gap: 20px;
+    
+    width: 15rem;
+    height: 28rem;
+    padding: 20px;
+    margin: 0 10px;
+    
+    box-shadow: 0 0 20px rgba(0,0,0,0.10);
+    border-radius: 10px;
+    
+}
+
+.price_card .notebook{
+    width: 12rem;
+    height: 9rem;
+}
+
+.price_card .calefactor{
+    width: 12rem;
+    height: 10rem;
+}
+
+.price_card .termotanque{
+    width: 6rem;
+    height: 12rem;
+}
+
+.price_card .lavarropas{
+    width: 9rem;
+    height: 12rem;
+}
+
+.price_card .pava{
+    width: 12rem;
+    height: 11rem;
+}
+
+.price_card p{
+    font-size: .85rem;
+    
+    color: black;
+}
+
+.price_card .free_tomorrow{
+    position: absolute;
+    bottom: 1rem;
+
+    color: rgb(0, 189, 0);
+    
+    font-weight: 500;
+
+}
+
+footer{
+    display: flex;
+
+    margin-top: 4rem;
+    
+    background-color: var(--gray-background);
+    height: 300px;
 }
