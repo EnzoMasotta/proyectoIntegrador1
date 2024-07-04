@@ -132,3 +132,71 @@ form label{
     background-color: var(--primary-color);
     color: white;
 }
+
+@media (max-width:1200px){
+    .signup_form{
+        border: none;
+
+        
+    }
+
+    
+}
+
+@media (max-width:800px){
+    .header .logo{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:480px){
+    form .nombre-apellido{
+        flex-direction: column;
+    }
+
+    form .nombre-apellido input{
+        width: 380px;
+    }
+
+    form .data input{
+        width: 380px;
+    }
+
+    .continue_button{
+        bottom: 3rem;
+        right: 3rem;
+    }
+
+    .signup_form{
+        position: initial;
+    }
+
+    .signup_card{
+    
+        margin-top: 2rem;
+    }
+
+    input{
+        width: 350px;
+    }
+}
+
+@media (max-width:420px){
+    form .nombre-apellido input{
+        width: 320px;
+    }
+
+    form .data input{
+        width: 320px;
+    }
+}
+
+@media (max-width:360px){
+    form .nombre-apellido input{
+        width: 280px;
+    }
+
+    form .data input{
+        width: 280px;
+    }
+}

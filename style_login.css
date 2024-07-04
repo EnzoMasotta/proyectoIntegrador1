@@ -52,7 +52,7 @@ section h1{
 
     color: var(--primary-color);
 
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 form{
@@ -131,6 +131,88 @@ form .button:hover{
 
     transition: all .3s;
 }
+
+@media (max-width:1200px){
+    section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 1.5rem;
+    }
+
+    section h1{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+        font-size: 1.6rem;
+
+        width: 100%;
+    }
+
+    form{
+        border: none;
+
+        width: 770px;
+    }
+
+    form .buttons{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width:800px){
+    .header .logo{
+        font-size: 1.3rem;
+    }
+    form{
+        border: none;
+
+        width: 650px;
+    }
+}
+
+@media (max-width:650px){
+    form{
+        border: none;
+
+        width: 520px;
+    }
+}
+
+@media (max-width:530px){
+    section{
+        padding: 0 7%;
+    }
+    
+    form{
+        border: none;
+
+        width: 450px;
+    }
+}
+
+@media (max-width:450px){
+     form{
+        border: none;
+
+        width: 375px;
+    }
+
+    section h1{
+        font-size: 1.4rem;
+
+        width: 100%;
+    }
+
+    .header .logo{
+        font-size: 1.1rem;
+    }
+}
+
+
 
 
 
