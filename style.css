@@ -104,6 +104,7 @@
 
 .user-cart label, .user-cart input{
     display: none;
+    cursor: pointer;
 }
 
 .hero_image{
@@ -420,6 +421,7 @@
 
 }
 
+
 @media (max-width:860px){
     .first_nav{
         align-items: center;
@@ -428,20 +430,16 @@
         height: 50%;
         position: fixed;
         top: 6rem;
-        right: -100%;
+        right: 0%;
         z-index: 100;
-    }
-
-    #toggle-menu:checked ~ .first_nav{
-        right: 0;
+        transition: right 0.3s ease; 
 
     }
 
-    #toggle-menu:checked ~ .second_nav{
-        position: fixed;
-        width: 100%;
-        background-color: white;
+    #check:checked ~ .first_nav{
+        background-color: aquamarine;
     }
+    
 
     .user-cart label{
         display: flex;
