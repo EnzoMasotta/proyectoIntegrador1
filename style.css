@@ -477,6 +477,7 @@
 
     #check:checked ~ .menu{
         display: flex;
+        transition: all .3s ease;
     }
     
     .first_nav ul{
@@ -522,18 +523,38 @@
     .second_nav{
         height: 4rem;
     }
+
+    .menu{
+        top: 4rem;
+    }
+
+    .menu ul{
+        gap: 2.5rem;
+    }
+
+    .menu a{
+        font-size: .8rem;
+    }
+
+    .menu a i{
+        font-size: .8rem;
+    }
     
     .second_nav .logo{
         font-size: 1rem;
     }
 
     .search-bar input{
-        width: 200px;
+        width: 100px;
         padding: 9px 0 9px 5px;
     }
 
+    .search-bar input::placeholder{
+        opacity: 0;
+    }
+
     .search-bar div i{
-        margin-left: 170px;
+        margin-left: 80px;
         margin-top: 10px;
     }
 
@@ -541,5 +562,49 @@
         font-size: 1.3rem;
     }
 
+    .price_card{
+     width: 25rem;  
+    }
 
+    .directions{
+        flex-direction: column;
+    }
+
+    .contact_form h2{
+        font-size: 1.3rem;
+    }
+
+    .contact_form label{
+        font-size: .85rem;
+    }
+
+    .contact .contact_form input{
+        width: 300px;
+    }
+
+    .copyright p{
+        font-size: .6rem;
+    }
+}
+
+@media (max-width:460px){
+    .search-bar input{
+        display: none;
+    }
+
+    .search-bar div i{
+        display: none;
+    }
+
+    .benefits .benefits_tittle{
+        font-size: 1.2rem;
+    }
+
+    .benefits_card{
+        width: 15rem;
+    }
+
+    .price_card{
+       width: 20rem;
+    }
 }
